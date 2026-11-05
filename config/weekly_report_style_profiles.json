@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "source_reports": [
+    {
+      "file": "H区八月第四周周报.pptx",
+      "slide_count": 9,
+      "observed_sections": [
+        "cover",
+        "manpower",
+        "contents",
+        "key_work",
+        "photo_evidence",
+        "timeline",
+        "control_core",
+        "next_plan",
+        "closing"
+      ]
+    },
+    {
+      "file": "H九月第一周周报0905.pptx",
+      "slide_count": 8,
+      "observed_sections": [
+        "cover",
+        "contents",
+        "manpower",
+        "operations",
+        "anomalies",
+        "key_work",
+        "next_plan",
+        "closing"
+      ]
+    },
+    {
+      "file": "H九月第二周周报0912.pptx",
+      "slide_count": 8,
+      "observed_sections": [
+        "cover",
+        "contents",
+        "manpower",
+        "operations",
+        "anomalies",
+        "key_work",
+        "next_plan",
+        "closing"
+      ]
+    }
+  ],
+  "visual_system": {
+    "aspect_ratio": "16:9",
+    "fonts": [
+      "微软雅黑",
+      "Microsoft YaHei",
+      "Arial"
+    ],
+    "colors": {
+      "navy": "#002060",
+      "blue": "#1F3B73",
+      "blue_alt": "#1F3763",
+      "cyan": "#00B0F0",
+      "body_gray": "#8C8C8C",
+      "muted_gray": "#7D7D7D",
+      "dark_gray": "#2F2F2F",
+      "white": "#FFFFFF"
+    },
+    "style_keywords": [
+      "企业商务",
+      "深蓝白底",
+      "青色点缀",
+      "清晰标题层级",
+      "数据看板",
+      "现场照片",
+      "卡片化重点工作",
+      "简洁留白"
+    ],
+    "recurring_sections": [
+      "cover",
+      "contents",
+      "manpower",
+      "operations",
+      "anomalies",
+      "key_work",
+      "next_plan",
+      "closing"
+    ],
+    "optional_sections": [
+      "photo_evidence",
+      "timeline",
+      "control_core",
+      "summary",
+      "generic",
+      "整改闭环",
+      "专题分析"
+    ],
+    "page_count_policy": {
+      "fixed": false,
+      "recommended_min": 6,
+      "recommended_max": 12,
+      "hard_min": 3,
+      "hard_max": 20,
+      "rule": "按本期素材覆盖面与汇报逻辑决定页数；不为凑页数添加空白页。"
+    },
+    "content_rules": [
+      "数字、日期和原因必须有来源",
+      "仅在存在可比数据时生成趋势图",
+      "无本期图片时不得复用历史现场照片冒充新照片",
+      "页码按实际总页数动态显示"
+    ]
+  }
+}

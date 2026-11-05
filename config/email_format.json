@@ -1,0 +1,7 @@
+{
+  "_说明": "固定邮件正文格式。{body} 会自动替换成AI生成的正文，日期自动取当天。",
+  "salutation": "各位同事：",
+  "closing": "特此通知。",
+  "signature_unit": "华东安保二部",
+  "use_date": true
+}

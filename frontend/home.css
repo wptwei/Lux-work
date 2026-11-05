@@ -1,0 +1,31 @@
+/* Homepage refinement, scoped to the existing tab. */
+#ds-workspace #tab-chat .chat-heading{display:block!important;max-width:var(--ds-ai-width);margin:0 auto!important;padding:0!important}
+#ds-workspace #tab-chat .chat-heading h1{font-size:var(--ds-title)!important;font-weight:600!important;margin-bottom:var(--ds-s2)!important}
+#ds-workspace #tab-chat .workspace-shell{max-width:var(--ds-home-width)!important;margin:auto!important;padding:0!important;background:transparent!important;border:0!important;gap:var(--ds-s4)!important}
+#ds-workspace #tab-chat .lux-chat:has(.chat-empty):not(:has(.message)){display:none!important}
+#ds-workspace #tab-chat .lux-chat,#ds-workspace #tab-chat .command-dock,#ds-workspace #tab-chat #chat-settings,#ds-workspace #tab-chat #chat-task-tools{width:100%!important;max-width:var(--ds-ai-width)!important;margin-left:auto!important;margin-right:auto!important}
+#ds-workspace #tab-chat .command-dock{background:radial-gradient(ellipse at top,color-mix(in srgb,var(--ds-blue) 6%,transparent),transparent 70%),var(--ds-surface)!important;border-color:var(--ds-ai-border)!important;padding:var(--ds-s4)!important;transform:none!important;animation:none!important}
+#ds-workspace #tab-chat .command-dock:focus-within{border-color:var(--ds-cyan)!important;box-shadow:0 0 0 3px color-mix(in srgb,var(--ds-blue) 10%,transparent)!important}
+#ds-workspace #task-composer textarea{min-height:80px!important;background:transparent!important}
+#ds-workspace #tab-chat .command-actions{grid-template-columns:1fr 1fr 1.1fr 1.3fr!important}
+#ds-workspace #tab-chat #task-send{grid-column:4!important;justify-self:stretch!important;width:100%!important}
+#ds-workspace #tab-chat .home-shortcuts{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:var(--ds-s2);margin:0 auto var(--ds-s4)}
+#ds-workspace #tab-chat .home-shortcuts button{background:transparent!important;border:1px solid var(--ds-border)!important;color:var(--ds-muted)!important;padding:var(--ds-s2) var(--ds-s3)!important;min-height:40px}
+#ds-workspace #tab-chat .home-shortcuts button:hover{background:var(--ds-elevated)!important;color:var(--ds-text)!important}
+#ds-workspace #tab-chat .home-summary-heading{align-items:center!important;gap:var(--ds-s4)!important}
+#ds-workspace #tab-chat .home-summary-heading span{color:var(--ds-muted);font-size:var(--ds-caption);margin-left:var(--ds-s4)}
+#ds-workspace #home-refresh{flex:0 0 64px!important;min-width:64px!important;background:transparent!important}
+#ds-workspace #tab-chat .home-summary{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:var(--ds-s6)}
+#ds-workspace #tab-chat .home-summary-panel{border-top:1px solid var(--ds-border);padding-top:var(--ds-s4);min-width:0}
+#ds-workspace #tab-chat .home-summary-panel header{display:flex;justify-content:space-between;align-items:center;gap:var(--ds-s2)}
+#ds-workspace #tab-chat .home-summary-panel h2{font-size:var(--ds-content)!important;margin:0!important}
+#ds-workspace #tab-chat .home-more{font-size:var(--ds-caption)!important;color:var(--ds-muted)!important;background:transparent!important;border:0!important;padding:var(--ds-s2)!important}
+#ds-workspace #tab-chat .home-summary ul{list-style:none;padding:0;margin:var(--ds-s2) 0}
+#ds-workspace #tab-chat .home-summary li{border-bottom:1px solid var(--ds-border)}
+#ds-workspace #tab-chat .home-summary-link,#ds-workspace #tab-chat .home-file-row{display:flex;width:100%;align-items:center;justify-content:space-between;gap:var(--ds-s2);padding:var(--ds-s3) 0!important;text-align:left;background:transparent!important;border:0!important}
+#ds-workspace #tab-chat .home-summary strong,#ds-workspace #tab-chat .home-summary a {font-size:var(--ds-body);font-weight:500;overflow-wrap:anywhere}
+#ds-workspace #tab-chat .home-summary small{display:block;color:var(--ds-muted);margin-top:var(--ds-s1)}
+#ds-workspace #tab-chat .home-summary em{font-size:var(--ds-caption);font-style:normal;color:var(--ds-muted);flex:none}
+#ds-workspace #tab-chat .home-empty{color:var(--ds-muted);font-size:var(--ds-small);padding:var(--ds-s4) 0}
+@media(max-width:1000px){#ds-workspace #tab-chat .home-summary{grid-template-columns:1fr 1fr}#ds-workspace #tab-chat .home-pending{grid-column:1/-1}}
+@media(max-width:600px){#ds-workspace #tab-chat .home-summary{grid-template-columns:1fr}#ds-workspace #tab-chat .command-actions{grid-template-columns:1fr 1fr!important}#ds-workspace #tab-chat #task-send{grid-column:1/-1!important;width:100%!important}#ds-workspace #tab-chat .home-summary-heading span{display:none}}

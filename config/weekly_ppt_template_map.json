@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "description": "可选的历史周报模板形状名称映射。先运行 inspect_template 查看各页 shapes[].name，再将实际名称填入对应角色列表。空列表表示使用自动识别。",
+  "slides": {
+    "1": {"title": [], "date": [], "body": []},
+    "2": {"title": [], "body": []},
+    "3": {"title": [], "body": [], "table": [], "key_message": []},
+    "4": {"title": [], "body": [], "chart": [], "key_message": []},
+    "5": {"title": [], "body": [], "chart": [], "key_message": []},
+    "6": {"title": [], "body": [], "items": []},
+    "7": {"title": [], "body": []},
+    "8": {"title": [], "body": []}
+  },
+  "marker_examples": {
+    "title": "{{P4_TITLE}}",
+    "body": "{{P4_FACTS}}",
+    "key_message": "{{P4_KEY_MESSAGE}}",
+    "table": "{{P3_TABLE_DATA}}",
+    "chart_data": "{{P4_CHART_DATA}}",
+    "work_items": "{{P6_ITEMS}}",
+    "next_plan": "{{P7_PLAN}}"
+  }
+}

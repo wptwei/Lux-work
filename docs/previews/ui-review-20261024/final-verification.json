@@ -1,0 +1,343 @@
+{
+  "quickStartWorks": true,
+  "emptyInputMessage": "⚠️ 请先输入本期工作数据（至少 12 字）。",
+  "chart": "P4 · 运营数据\n12\n6\n0\n门禁检查\n培训",
+  "eventLayout": {
+    "width": 1076,
+    "right": 1379,
+    "viewport": 1440,
+    "emptyDisplay": "block"
+  },
+  "chartLayout": {
+    "width": 290,
+    "right": 340,
+    "viewport": 390
+  },
+  "pageErrors": [],
+  "layoutChecks": [
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "selected": "智能工作台",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "selected": "交付中心",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "selected": "运营管理",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "selected": "效能看板",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "selected": "事件中心",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "selected": "资源中心",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "selected": "安全治理",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "selected": "任务历史",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "selected": "账号管理",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1024,
+        1000
+      ],
+      "selected": "智能工作台",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1024,
+        1000
+      ],
+      "selected": "交付中心",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1024,
+        1000
+      ],
+      "selected": "运营管理",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1024,
+        1000
+      ],
+      "selected": "效能看板",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1024,
+        1000
+      ],
+      "selected": "事件中心",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1024,
+        1000
+      ],
+      "selected": "资源中心",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1024,
+        1000
+      ],
+      "selected": "安全治理",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1024,
+        1000
+      ],
+      "selected": "任务历史",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1024,
+        1000
+      ],
+      "selected": "账号管理",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1280,
+        1000
+      ],
+      "selected": "智能工作台",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1280,
+        1000
+      ],
+      "selected": "交付中心",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1280,
+        1000
+      ],
+      "selected": "运营管理",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1280,
+        1000
+      ],
+      "selected": "效能看板",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1280,
+        1000
+      ],
+      "selected": "事件中心",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1280,
+        1000
+      ],
+      "selected": "资源中心",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1280,
+        1000
+      ],
+      "selected": "安全治理",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1280,
+        1000
+      ],
+      "selected": "任务历史",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1280,
+        1000
+      ],
+      "selected": "账号管理",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "selected": "智能工作台",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "selected": "交付中心",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "selected": "运营管理",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "selected": "效能看板",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "selected": "事件中心",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "selected": "资源中心",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "selected": "安全治理",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "selected": "任务历史",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    },
+    {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "selected": "账号管理",
+      "horizontalOverflow": false,
+      "navVisible": 9
+    }
+  ]
+}

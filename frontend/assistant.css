@@ -1,0 +1,48 @@
+/* Assistant: readable open responses, using existing message components. */
+#ds-workspace #tab-chat .lux-chat{max-width:var(--ds-ai-width)!important;height:auto!important;min-height:0!important;max-height:65dvh!important;overflow:auto!important;padding:var(--ds-s4) 0!important}
+#ds-workspace #tab-chat .lux-chat .bubble-wrap,#ds-workspace #tab-chat .lux-chat .message-wrap {max-width:100%!important;background:transparent!important;box-shadow:none!important}
+#ds-workspace #tab-chat .lux-chat .bot,#ds-workspace #tab-chat .lux-chat .bot-row .message {background:transparent!important;border:0!important;border-radius:0!important;padding:var(--ds-s4) 0!important}
+#ds-workspace #tab-chat .lux-chat p,#ds-workspace #tab-chat .lux-chat li {line-height:1.85!important;overflow-wrap:anywhere}
+#ds-workspace #tab-chat .lux-chat pre{max-width:100%;overflow:auto;background:var(--ds-sidebar)!important;border:1px solid var(--ds-border);border-radius:var(--ds-input-radius);padding:var(--ds-s4)}
+#ds-workspace #tab-chat .lux-chat table{display:block;max-width:100%;overflow:auto}
+#ds-workspace #tab-chat .lux-chat h3{font-size:var(--ds-content)!important;margin:var(--ds-s6) 0 var(--ds-s2)!important}
+#ds-workspace #tab-chat #assistant-status,#ds-workspace #tab-chat #assistant-retry{max-width:var(--ds-ai-width);width:100%;margin:auto;color:var(--ds-muted);font-size:var(--ds-small)}
+#ds-workspace #tab-chat #assistant-retry{width:auto!important;align-self:center}
+#ds-workspace #tab-chat #task-send:disabled{opacity:.55!important;cursor:wait!important}
+#ds-workspace #voice-inline{display:flex;align-items:center;flex-wrap:wrap;gap:var(--ds-s2);color:var(--ds-muted);font-size:var(--ds-small)}
+#ds-workspace #voice-inline[hidden],#ds-workspace #voice-cancel[hidden]{display:none!important}
+#ds-workspace #voice-live-preview{flex-basis:100%;overflow-wrap:anywhere;color:var(--ds-text)}
+#ds-workspace #voice-cancel{background:transparent!important;border:1px solid var(--ds-border)!important;color:var(--ds-muted)!important;padding:var(--ds-s2)!important;margin-left:auto}
+#ds-workspace .ds-chat-file{display:flex;flex-wrap:wrap;align-items:center;gap:var(--ds-s3);border-bottom:1px solid var(--ds-border);padding-bottom:var(--ds-s4)}
+#ds-workspace .ds-chat-file .ds-preview-btn{border:1px solid var(--ds-control-border);background:var(--ds-surface);color:var(--ds-text);padding:var(--ds-s2) var(--ds-s3);cursor:pointer}
+#ds-workspace #tab-chat .lux-chat .ds-preview-btn{display:inline-flex!important;align-items:center;min-height:40px}
+#ds-workspace #tab-chat .lux-chat .user-row .message{background:transparent!important;border:0!important;padding:0!important;max-width:100%!important}
+#ds-workspace #tab-chat .lux-chat [data-testid="user"]{background:var(--ds-elevated)!important;box-shadow:none!important;border:1px solid var(--ds-border)!important;border-radius:var(--ds-card-radius)!important;padding:var(--ds-s3) var(--ds-s4)!important;max-width:90%!important}
+#ds-workspace #tab-chat .lux-chat [data-testid="bot"]{background:transparent!important;border:0!important;padding:0!important}
+/* Conversation mode belongs to the original home tab; no parallel page. */
+#ds-workspace #assistant-overview-toggle{display:none;border:1px solid var(--ds-border);background:transparent;color:var(--ds-muted);padding:var(--ds-s2) var(--ds-s3);font-size:var(--ds-small);cursor:pointer}
+#ds-workspace #tab-chat.ds-conversation .chat-heading{display:flex!important;align-items:center;justify-content:space-between;gap:var(--ds-s4);margin:0 auto var(--ds-s4)!important}
+#ds-workspace #tab-chat.ds-conversation .chat-heading h1{font-size:var(--ds-section)!important;margin:0!important}
+#ds-workspace #tab-chat.ds-conversation .chat-heading p{display:none!important}
+#ds-workspace #tab-chat.ds-conversation #assistant-overview-toggle{display:block}
+#ds-workspace #tab-chat.ds-conversation:not(.ds-show-summary) .home-shortcuts,#ds-workspace #tab-chat.ds-conversation:not(.ds-show-summary) .home-summary-heading,#ds-workspace #tab-chat.ds-conversation:not(.ds-show-summary) #home-summary {display:none!important}
+#ds-workspace #tab-chat.ds-conversation .lux-chat{height:clamp(240px,calc(100dvh - 450px),640px)!important;max-height:640px!important}
+#ds-workspace #tab-chat .lux-chat .ds-assistant-file{padding:var(--ds-s4)!important;margin:var(--ds-s3) 0!important;background:var(--ds-surface)!important;border:1px solid var(--ds-border)!important;border-radius:var(--ds-card-radius)!important;box-shadow:none!important;max-width:100%;animation:ds-page-in var(--ds-page) var(--ds-ease)}
+#ds-workspace #tab-chat .assistant-file-meta{display:flex;gap:var(--ds-s2);align-items:center;margin-bottom:var(--ds-s2);color:var(--ds-muted);font-size:var(--ds-caption)}
+#ds-workspace #tab-chat .assistant-file-meta span:first-child{border:1px solid var(--ds-border);border-radius:var(--ds-button-radius);padding:var(--ds-s1) var(--ds-s2)}
+#ds-workspace #tab-chat .ds-assistant-file strong{font-size:var(--ds-content)!important;display:block;overflow-wrap:anywhere}
+#ds-workspace #tab-chat .assistant-match{color:var(--ds-muted)!important;font-size:var(--ds-small)!important;line-height:1.7!important;margin:var(--ds-s2) 0!important}
+#ds-workspace #tab-chat .assistant-match span{display:block;font-size:var(--ds-caption);margin-bottom:var(--ds-s1)}
+#ds-workspace #tab-chat .ds-assistant-file a,#ds-workspace #tab-chat .ds-assistant-file .ds-preview-btn {min-height:40px!important;margin-bottom:0!important}
+@media(max-width:600px){#ds-workspace #tab-chat.ds-conversation .lux-chat{height:clamp(220px,calc(100dvh - 430px),500px)!important}#ds-workspace #tab-chat .ds-assistant-file{padding:var(--ds-s3)!important}}
+@media(prefers-reduced-motion:reduce){#ds-workspace #tab-chat .ds-assistant-file{animation:none!important}}
+#ds-workspace #tab-chat.ds-conversation .lux-chat .user-row .message{background:transparent!important;border:0!important;border-radius:0!important;padding:0!important;width:100%!important;max-width:100%!important;box-shadow:none!important}
+#ds-workspace #tab-chat.ds-conversation .lux-chat .bubble-wrap{padding:var(--ds-s4) 0!important}
+#ds-workspace #tab-chat.ds-conversation .lux-chat .message-wrap{gap:var(--ds-s6)!important}
+
+/* Audio level is driven only by captured PCM, never by a timer or fake progress. */
+#ds-workspace #voice-level{display:inline-flex;align-items:center;gap:3px;height:20px;width:28px;--voice-level:0}
+#ds-workspace #voice-level[hidden]{display:none!important}
+#ds-workspace #voice-level i{width:3px;height:16px;border-radius:var(--ds-button-radius);background:var(--ds-cyan);transform:scaleY(calc(.15 + var(--voice-level)*.85));transform-origin:center}
+#ds-workspace #voice-level i:nth-child(2n){height:12px}
+@media(prefers-reduced-motion:reduce){#ds-workspace #voice-level i{transform:none;height:4px}}

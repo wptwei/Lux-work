@@ -1,0 +1,33 @@
+{
+  "default_region": "H区",
+  "regions": {
+    "H区": {
+      "description": "生产区域，采用标准受控资产阈值",
+      "filename_risk_keywords": ["监控", "camera", "cctv", "厂区布局", "layout", "平面图", "花名册", "门禁记录"],
+      "image_review_threshold": 0.58,
+      "monitoring_indicator_min": 2,
+      "layout_indicator_min": 2
+    },
+    "NPI区": {
+      "description": "新品与研发相关区域，执行更严格的图片和布局资料策略",
+      "filename_risk_keywords": ["监控", "camera", "cctv", "厂区布局", "layout", "平面图", "花名册", "门禁记录", "样机", "研发", "NPI"],
+      "image_review_threshold": 0.45,
+      "monitoring_indicator_min": 1,
+      "layout_indicator_min": 1
+    },
+    "办公区": {
+      "description": "行政办公区域，减少普通办公截图误报",
+      "filename_risk_keywords": ["监控", "camera", "cctv", "厂区布局", "花名册", "门禁记录"],
+      "image_review_threshold": 0.68,
+      "monitoring_indicator_min": 2,
+      "layout_indicator_min": 2
+    },
+    "公共区": {
+      "description": "公共活动区域，保留个人信息与监控资料保护",
+      "filename_risk_keywords": ["监控", "camera", "cctv", "花名册", "门禁记录"],
+      "image_review_threshold": 0.72,
+      "monitoring_indicator_min": 2,
+      "layout_indicator_min": 3
+    }
+  }
+}

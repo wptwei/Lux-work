@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 运行配置（含密钥，绝不提交）
+.env
+
+# 运行时数据
+data/*.db
+data/*.db-*
+data/memory.json
+# 账号库含密码哈希，属于本机运行时数据，不进代码仓库
+data/users.json
+logs/*.jsonl
+logs/*.log
+downloads/
+
+# 语音唤醒 KWS：模型与 WASM 运行时体积较大，用 install_kws.ps1 下载，不入库
+models/kws/preload.data
+models/kws/preload.js.metadata
+frontend/kws/prebuilt/kws.wasm
+
+# 回答朗读 TTS：Kokoro 模型约 160MB，用 install_tts.ps1 下载；合成音频是运行时临时产物
+models/tts/
+data/tts_audio/
+
+# 临时 / 调试产物
+_tmp_*
+_tmp_media/
+_inspect_*.txt
+
+# 文件库原件与索引（业务数据，不进代码仓库）
+data/file_library/
+
+# 发布：本机配置、备份、运行状态
+deploy/deploy.config.psd1
+backups/
+logs/deploy-state.json
+logs/app.out.log
+logs/app.err.log
+logs/lux.pid
+logs/lux-service-state.json
+logs/lux-service-state.json.tmp
+logs/lux.lock
+logs/service.log
+logs/public-share-process.json
+logs/public-share-*.log
+logs/frpc_windows_amd64_v0.3.download
+logs/redline_*.jsonl
+.gradio/
+
+# Local runtime data and downloaded model caches
+/data/
+/models/
+/logs/
+.env.*
+!.env.example

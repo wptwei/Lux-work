@@ -1,0 +1,44 @@
+{
+  "_comment": "安保二部数据红线规则。维护原则：宁可多配，不可漏配。",
+
+  "sensitive_terms": {
+    "customers": ["A客户"],
+    "production_lines": ["H区", "H区3F", "NPI"],
+    "company_header": ["华东行政管理处", "安保二部"]
+  },
+
+  "block_terms": [],
+
+  "regex_patterns": {
+    "id_card": {
+      "pattern": "(?<!\\d)\\d{6}[ -]?\\d{8}[ -]?\\d{3}[\\dXx\uff38\uff58](?!\\d)",
+      "action": "block",
+      "label": "身份证号"
+    },
+    "phone": {
+      "pattern": "(?<!\\d)(?:[+\uff0b]?86[- ]?)?[1\uff11][3-9\uff13-\uff19]\\d[- ]?\\d{4}[- ]?\\d{4}(?!\\d)",
+      "action": "block",
+      "label": "手机号"
+    },
+    "work_id": {
+      "pattern": "(?<!\\d)\\d{8}(?!\\d)",
+      "action": "desensitize",
+      "exclude_date_like": true,
+      "label": "工号"
+    },
+    "email": {
+      "pattern": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}",
+      "action": "desensitize",
+      "label": "邮箱"
+    }
+  },
+
+  "asset_rules": {
+    "filename_risk_keywords": ["监控", "camera", "cctv", "厂区布局", "layout", "平面图", "花名册", "门禁记录", "门禁原始", "抬头原件"],
+    "monitoring_indicators": ["监控画面", "监控截图", "CCTV", "CAM", "摄像头", "录像", "通道", "时间戳", "实时预览"],
+    "layout_indicators": ["厂区布局", "平面图", "楼层图", "layout", "比例尺", "房间编号", "疏散路线", "出入口位置"],
+    "roster_markers": ["姓名", "工号", "部门", "手机号", "岗位", "身份证", "入职日期"],
+    "access_log_markers": ["刷卡时间", "卡号", "工号", "门禁点位", "进出方向", "开门结果", "设备编号"],
+    "letterhead_markers": ["公司抬头", "文件编号", "公章", "原件", "通知", "发文日期"]
+  }
+}

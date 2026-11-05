@@ -1,0 +1,30 @@
+#ds-workspace #tab-library #pdf-library{padding:0!important;border:0!important;background:transparent!important}
+#ds-workspace #library-capability{color:var(--ds-muted);font-size:var(--ds-small)}
+#ds-workspace #library-search:focus-within{border-radius:var(--ds-input-radius);box-shadow:0 0 0 2px color-mix(in srgb,var(--ds-blue) 15%,transparent)}
+#ds-workspace #tab-library .library-search-row{align-items:end!important}
+#ds-workspace #library-results .library-list{border:1px solid var(--ds-border);border-radius:var(--ds-card-radius);background:var(--ds-sidebar);overflow:visible}
+#ds-workspace #library-results .library-file-row,#ds-workspace #library-results .library-list-head{display:grid!important;grid-template-columns:minmax(220px,1fr) 52px 84px 108px 124px;align-items:center;gap:var(--ds-s4);padding:var(--ds-s2) var(--ds-s4)!important;min-height:var(--ds-table-row);border:0!important;border-bottom:1px solid var(--ds-border)!important;border-radius:0!important;background:transparent!important;margin:0!important;box-shadow:none!important}
+#ds-workspace #library-results .library-list-head{color:var(--ds-muted);font-size:var(--ds-caption);min-height:var(--ds-table-head)}
+#ds-workspace #library-results .library-file-row:hover{background:var(--ds-elevated)!important}
+#ds-workspace #library-results .library-file-row>span,#ds-workspace #library-results time{font-size:var(--ds-small);color:var(--ds-muted)}
+#ds-workspace #library-results .library-name{display:flex;align-items:center;gap:var(--ds-s3);min-width:0}
+#ds-workspace #library-results .library-name svg{width:24px;height:24px;flex:none;color:var(--ds-muted)}
+#ds-workspace #library-results strong{font-size:var(--ds-body)!important;font-weight:500!important;overflow-wrap:anywhere}
+#ds-workspace #library-results .library-match{display:block;margin-top:var(--ds-s1);font-size:var(--ds-caption)!important;color:var(--ds-muted)!important}
+#ds-workspace #library-results .library-row-actions{display:flex;gap:var(--ds-s2);align-items:center}
+#ds-workspace #library-results .ds-preview-btn{margin:0!important;padding:var(--ds-s1) var(--ds-s2)!important;min-height:var(--ds-button-sm)!important;height:var(--ds-button-sm)!important;border:1px solid var(--ds-border)!important;background:transparent!important}
+#ds-workspace #library-results details{position:relative;color:var(--ds-muted);font-size:var(--ds-small)}
+#ds-workspace #library-results summary{cursor:pointer;padding:var(--ds-s2);list-style:none}
+#ds-workspace #library-results details a{position:absolute;right:0;top:100%;z-index:5;white-space:nowrap;background:var(--ds-elevated)!important;margin:0!important;min-width:112px;box-shadow:none}
+#ds-workspace #library-results .library-count{font-size:var(--ds-caption);color:var(--ds-muted);margin-bottom:var(--ds-s3)}
+#ds-workspace .ds-pdf-dialog.ds-library-drawer{position:fixed;inset:0 0 0 auto;margin:0;width:min(960px,85vw);height:100dvh;max-height:100dvh;border-radius:var(--ds-panel-radius) 0 0 var(--ds-panel-radius);background:var(--ds-surface);backdrop-filter:none}
+@media(max-width:1000px){#ds-workspace #library-results .library-list{overflow-x:auto}#ds-workspace #library-results .library-file-row,#ds-workspace #library-results .library-list-head{min-width:720px}#ds-workspace .ds-pdf-dialog.ds-library-drawer{width:100vw;border-radius:0}}
+#ds-workspace #tab-library #pdf-library{gap:var(--ds-s4)!important}
+#ds-workspace #tab-library #pdf-library>.styler{background:transparent!important;border:0!important}
+#ds-workspace #tab-library .library-search-row{display:grid!important;grid-template-columns:minmax(240px,1fr) 128px 128px;gap:var(--ds-s3)!important}
+#ds-workspace #tab-library .library-search-row>*{min-width:0!important;width:100%!important}
+#ds-workspace #tab-library #library-manage{background:var(--ds-surface)!important;border:1px solid var(--ds-border)!important;border-radius:var(--ds-card-radius)!important}
+#ds-workspace #tab-library #library-manage>button{background:transparent!important;color:var(--ds-muted)!important;padding:var(--ds-s3) var(--ds-s4)!important}
+@media(max-width:760px){#ds-workspace #tab-library .library-search-row{grid-template-columns:1fr 1fr!important}#ds-workspace #library-search{grid-column:1/-1}}
+#ds-workspace #tab-library #library-upload>button{display:none!important}
+@media(max-width:760px){#ds-workspace #tab-library .library-search-row>:first-child{grid-column:1/-1!important}#ds-workspace #tab-library .library-search-row .form{width:100%!important;min-width:0!important}}

@@ -1,0 +1,34 @@
+/* Deep Space: all colour literals live here. */
+:root,.gradio-container,.ds-workspace{
+ --ds-bg:#0B1018;
+ --ds-sidebar:#111827;
+ --ds-surface:#17212E;
+ --ds-elevated:#1D2A38;
+ --ds-border:#263445;
+ --ds-text:#EEF3FA;
+ --ds-muted:#94A3B8;
+ --ds-blue:#478BFF;
+ --ds-cyan:#4DD8E8;
+ --ds-success:#34C59A;
+ --ds-warning:#F2B768;
+ --ds-error:#F17878;
+ --ds-on-accent:var(--ds-bg);--ds-focus:var(--ds-cyan);
+ --ds-control-border:color-mix(in srgb,var(--ds-muted) 62%,var(--ds-surface));
+ --ds-s1:4px;--ds-s2:8px;--ds-s3:12px;--ds-s4:16px;--ds-s6:24px;--ds-s8:32px;--ds-s12:48px;
+ --ds-title:28px;--ds-section:18px;--ds-content:15px;--ds-body:14px;--ds-small:13px;--ds-caption:12px;
+ --ds-font:"Segoe UI","Microsoft YaHei","PingFang SC",system-ui,sans-serif;
+ --ds-button-radius:8px;--ds-input-radius:10px;--ds-card-radius:12px;--ds-panel-radius:16px;
+ --ds-button-sm:32px;--ds-button-md:40px;--ds-button-lg:44px;
+ --ds-input-height:44px;--ds-table-head:40px;--ds-table-row:56px;
+ --ds-nav-selected:color-mix(in srgb,var(--ds-blue) 15%,var(--ds-sidebar));
+ --ds-blue-hover:color-mix(in srgb,var(--ds-blue) 88%,var(--ds-text));
+ --ds-overlay:color-mix(in srgb,var(--ds-bg) 70%,transparent);
+ --ds-focus-ring:0 0 0 3px color-mix(in srgb,var(--ds-blue) 12%,transparent);
+ --ds-input-text:15px;--ds-panel-space:24px;--ds-field-gap:16px;
+ --ds-ai-border:color-mix(in srgb,var(--ds-blue) 35%,var(--ds-border));
+ --ds-panel-sheen:linear-gradient(180deg,color-mix(in srgb,var(--ds-text) 1.5%,transparent),transparent 120px);
+ --ds-ai-width:820px;--ds-home-width:var(--ds-ai-width);
+ --ds-nav:232px;--ds-nav-compact:68px;--ds-toolbar:60px;--ds-content-max:1360px;--ds-inset:32px;
+ --ds-hover:150ms;--ds-press:180ms;--ds-modal:240ms;--ds-page:220ms;--ds-ease:cubic-bezier(0.2,0.8,0.2,1);
+ color-scheme:dark;
+}

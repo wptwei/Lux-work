@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "note": "固定意图测试集：用于对比“旧关键词门控 / 新规则路由 / 新规则+模型路由”。修改后必须重新跑全部历史结果，不能只保留有利样本。",
+  "cases": [
+    {"id": "draft-01", "category": "动作区分", "message": "帮我写一份巡检制度", "expected_action": "draft", "expected_scope": "none"},
+    {"id": "draft-02", "category": "动作区分", "message": "起草一份门禁异常情况说明", "expected_action": "draft", "expected_scope": "none"},
+    {"id": "draft-03", "category": "动作区分", "message": "拟一份下周的安保值班方案", "expected_action": "draft", "expected_scope": "none"},
+    {"id": "draft-04", "category": "动作区分", "message": "撰写一份年度安保总结报告", "expected_action": "draft", "expected_scope": "none"},
+    {"id": "draft-05", "category": "动作区分", "message": "帮我写一份 300 字的情况说明", "expected_action": "draft", "expected_scope": "none"},
+
+    {"id": "retrieve-01", "category": "文件检索", "message": "找出我上传的巡检制度", "expected_action": "retrieve", "expected_scope": "local_library"},
+    {"id": "retrieve-02", "category": "文件检索", "message": "有没有管员工评分的规定", "expected_action": "retrieve", "expected_scope": "local_library"},
+    {"id": "retrieve-03", "category": "文件检索", "message": "帮我找一下文件管理规范", "expected_action": "retrieve", "expected_scope": "local_library"},
+    {"id": "retrieve-04", "category": "文件检索", "message": "调取上次的应急预案", "expected_action": "retrieve", "expected_scope": "local_library"},
+    {"id": "retrieve-05", "category": "文件检索", "message": "列出我最近上传的文件", "expected_action": "retrieve", "expected_scope": "local_library"},
+
+    {"id": "negate-01", "category": "否定", "message": "不要找文件，解释一下这个概念", "expected_action": "explain", "expected_scope": "none"},
+    {"id": "negate-02", "category": "否定", "message": "别去查资料了，直接帮我写一段", "expected_action": "draft", "expected_scope": "none"},
+    {"id": "negate-03", "category": "否定", "message": "不用检索，说说制度一般包括哪些内容", "expected_action": "explain", "expected_scope": "none"},
+    {"id": "negate-04", "category": "否定", "message": "不需要找文件，我想了解门禁系统的原理", "expected_action": "explain", "expected_scope": "none"},
+
+    {"id": "continue-01", "category": "延续", "message": "改成 100 字，别用表格", "expected_action": "revise", "expected_relation": "continue", "state": {"action": "draft", "object_type": "notice"}},
+    {"id": "continue-02", "category": "延续", "message": "再简短一点", "expected_action": "revise", "expected_relation": "continue", "state": {"action": "draft", "object_type": "notice"}},
+    {"id": "continue-03", "category": "延续", "message": "把第二段删掉", "expected_action": "revise", "expected_relation": "continue", "state": {"action": "draft", "object_type": "statement"}},
+    {"id": "continue-04", "category": "延续", "message": "用表格重新整理一下", "expected_action": "revise", "expected_relation": "continue", "state": {"action": "draft", "object_type": "summary"}},
+
+    {"id": "correct-01", "category": "纠正", "message": "不是通知，是情况说明", "expected_action": "revise", "expected_relation": "correct", "state": {"action": "draft", "object_type": "notice"}},
+    {"id": "correct-02", "category": "纠正", "message": "不对，这个是周报不是报告", "expected_action": "revise", "expected_relation": "correct", "state": {"action": "draft", "object_type": "report"}},
+    {"id": "correct-03", "category": "纠正", "message": "不是让你写，是让你解释", "expected_action": "explain", "expected_relation": "correct", "state": {"action": "draft", "object_type": ""}},
+
+    {"id": "ref-01", "category": "指代", "message": "第二份", "files": ["v-a", "v-b"], "expected_action": "retrieve", "expected_scope": "local_library", "expected_target": "v-b"},
+    {"id": "ref-02", "category": "指代", "message": "第一份", "files": ["v-a", "v-b"], "expected_action": "retrieve", "expected_target": "v-a"},
+    {"id": "ref-03", "category": "指代", "message": "第三份", "files": ["v-a", "v-b"], "expected_action": "clarify"},
+
+    {"id": "switch-01", "category": "任务切换", "message": "换个问题，帮我翻译一下这段话", "expected_action": "chat", "expected_relation": "switch"},
+    {"id": "switch-02", "category": "任务切换", "message": "先不管这个了，新任务：整理一下今天的巡检记录", "expected_action": "chat", "expected_relation": "switch"},
+    {"id": "switch-03", "category": "任务切换", "message": "重新开始，问你个别的事", "expected_action": "chat", "expected_relation": "switch"},
+
+    {"id": "composite-01", "category": "复合任务", "message": "找到巡检制度并总结三点", "expected_action": "retrieve", "expected_scope": "local_library"},
+    {"id": "composite-02", "category": "复合任务", "message": "把上个月的门禁记录找出来做个分析", "expected_action": "retrieve"},
+
+    {"id": "attach-01", "category": "附件", "message": "总结刚才上传的 PDF", "expected_action": "summarize"},
+    {"id": "attach-02", "category": "附件", "message": "这份文件第三页讲了什么", "expected_action": "explain"},
+
+    {"id": "chat-01", "category": "普通对话", "message": "你好", "expected_action": "chat"},
+    {"id": "chat-02", "category": "普通对话", "message": "今天天气怎么样", "expected_action": "chat"},
+    {"id": "chat-03", "category": "普通对话", "message": "解释一下门禁制度", "expected_action": "explain", "expected_scope": "none"},
+    {"id": "chat-04", "category": "普通对话", "message": "什么是尾随进入", "expected_action": "explain"},
+    {"id": "chat-05", "category": "普通对话", "message": "谢谢", "expected_action": "chat"},
+    {"id": "chat-06", "category": "普通对话", "message": "帮我把这段话润色一下", "expected_action": "chat"},
+    {"id": "chat-07", "category": "普通对话", "message": "门禁系统一般分哪几类", "expected_action": "explain"},
+    {"id": "chat-08", "category": "普通对话", "message": "总结一下我们刚才聊的内容", "expected_action": "summarize", "state": {"action": "chat", "object_type": ""}}
+  ]
+}

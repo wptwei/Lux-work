@@ -1,0 +1,39 @@
+/* Shared component contract. Page styles own layout, shared controls own states.
+   Avoid comma lists inside :is(): Gradio scopes those selectors incorrectly. */
+#ds-workspace button.ds-control{--ds-control-height:var(--ds-button-md);box-sizing:border-box!important;min-height:var(--ds-control-height)!important;height:var(--ds-control-height)!important;max-height:none!important;padding:0 var(--ds-s4)!important;line-height:1.4!important;white-space:nowrap;flex-shrink:0;box-shadow:none!important;transform:none}
+#ds-workspace button.ds-control.ds-small{--ds-control-height:var(--ds-button-sm);padding:0 var(--ds-s3)!important;font-size:var(--ds-small)!important}
+#ds-workspace button.ds-control.ds-large{--ds-control-height:var(--ds-button-lg)}
+#ds-workspace button.ds-control.primary{background:var(--ds-blue)!important;border-color:var(--ds-blue)!important;color:var(--ds-on-accent)!important}
+#ds-workspace button.ds-control.primary:hover:not(:disabled){background:var(--ds-blue-hover)!important;border-color:var(--ds-blue-hover)!important}
+#ds-workspace button.ds-control.ds-ghost{background:transparent!important;border-color:transparent!important;color:var(--ds-muted)!important}
+#ds-workspace button.ds-control.ds-ghost:hover:not(:disabled){background:var(--ds-elevated)!important;color:var(--ds-text)!important}
+#ds-workspace button.ds-control:active:not(:disabled){transform:translateY(1px)!important}
+#ds-workspace button.ds-control:disabled,#ds-workspace button.ds-control[aria-disabled=true]{opacity:.55!important;cursor:not-allowed!important;transform:none!important}
+#ds-workspace button.ds-control[aria-busy=true]{cursor:progress!important}
+#ds-workspace #ds-nav-toggle.ds-control{padding:var(--ds-s2)!important}
+#ds-workspace #task-send.ds-control:hover:not(:disabled){background:var(--ds-blue-hover)!important;border-color:var(--ds-blue-hover)!important}
+#ds-workspace #library-results .ds-preview-btn:hover{background:var(--ds-elevated)!important}
+#ds-workspace input:not([type=checkbox]):not([type=radio]):not([type=file]):not([type=range]){height:var(--ds-input-height)!important;min-height:var(--ds-input-height)!important;box-sizing:border-box!important}
+#ds-workspace input:focus-visible,#ds-workspace textarea:focus-visible,#ds-workspace select:focus-visible{border-color:var(--ds-blue)!important;outline:2px solid var(--ds-focus)!important;outline-offset:2px!important;box-shadow:var(--ds-focus-ring)!important}
+#ds-workspace #task-composer textarea:focus-visible{outline:none!important;box-shadow:none!important}
+#ds-workspace input[aria-invalid=true],#ds-workspace textarea[aria-invalid=true],#ds-workspace select[aria-invalid=true]{border-color:var(--ds-error)!important}
+#ds-workspace [role=alert],#ds-workspace .is-error{color:var(--ds-error)!important}
+#ds-workspace input:disabled,#ds-workspace textarea:disabled,#ds-workspace select:disabled{opacity:.55!important;cursor:not-allowed!important}
+#ds-workspace table tbody tr{background:transparent!important}
+#ds-workspace table tbody tr:hover{background:var(--ds-elevated)!important}
+#ds-workspace table tbody tr[aria-selected=true],#ds-workspace .library-file-row[aria-selected=true]{background:var(--ds-nav-selected)!important}
+#ds-workspace table tbody tr[aria-selected=true]:hover{background:var(--ds-nav-selected)!important}
+#ds-workspace .ops-empty-top,#ds-workspace .ops-empty-icon{display:none!important}
+#ds-workspace .empty-state,#ds-workspace .pdf-empty,#ds-workspace .history-empty,#ds-workspace .delivery-ledger-empty,#ds-workspace .incident-empty{box-shadow:none!important;background:var(--ds-sidebar)!important;border:1px solid var(--ds-border)!important;border-radius:var(--ds-card-radius)!important;color:var(--ds-muted)!important}
+#ds-workspace dialog.ds-dialog{box-sizing:border-box;overflow:hidden;box-shadow:none;background:var(--ds-surface);color:var(--ds-text)}
+#ds-workspace dialog.ds-dialog[open]{display:flex;flex-direction:column;gap:var(--ds-s4);animation:ds-panel-in var(--ds-modal) var(--ds-ease)}
+#ds-workspace .ds-dialog::backdrop{background:var(--ds-overlay)}
+#ds-workspace .ds-dialog-head{flex:none;display:flex;align-items:center;justify-content:space-between;gap:var(--ds-s4);padding-bottom:var(--ds-s4);border-bottom:1px solid var(--ds-border);font-size:var(--ds-section);font-weight:600}
+#ds-workspace .ds-dialog-body{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain}
+#ds-workspace .ds-dialog-actions{display:flex!important;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:var(--ds-s3);flex:none;margin-top:auto;padding-top:var(--ds-s4);border-top:1px solid var(--ds-border)}
+#ds-workspace .ds-dialog-actions:empty{display:none!important}
+#ds-workspace .ds-dialog-actions a{display:inline-flex;align-items:center;min-height:var(--ds-button-md);font-size:var(--ds-body)}
+#ds-workspace .ds-dialog-head h2{min-width:0;font-size:var(--ds-section);font-weight:600;line-height:1.5;margin:0}
+@keyframes ds-panel-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(max-width:760px){#ds-workspace .ds-dialog-head{gap:var(--ds-s2)}#ds-workspace .ds-dialog-head h2{font-size:var(--ds-content)}}
+@media(prefers-reduced-motion:reduce){#ds-workspace dialog.ds-dialog[open]{animation:none!important}#ds-workspace button.ds-control:active:not(:disabled){transform:none!important}}

@@ -1,0 +1,9 @@
+{
+  "_说明": "发件邮箱配置。常见：腾讯企业邮 smtp.exmail.qq.com:465；阿里企业邮 smtp.mxhichina.com:465；Office365 smtp.office365.com:587",
+  "smtp_host": "smtp.exmail.qq.com",
+  "smtp_port": 465,
+  "use_ssl": true,
+  "use_starttls": false,
+  "sender": "",
+  "sender_name": "H区安保二部"
+}
